@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "section_types",
+  "info": {
+    "singularName": "section-type",
+    "pluralName": "section-types",
+    "displayName": "Section Type",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "class_name": {
+      "type": "string"
+    },
+    "sections": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::section.section",
+      "mappedBy": "section_type"
+    }
+  }
+}

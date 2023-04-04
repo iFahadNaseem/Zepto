@@ -1,0 +1,90 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sections",
+  "info": {
+    "singularName": "section",
+    "pluralName": "sections",
+    "displayName": "Section",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "pages": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::page.page",
+      "mappedBy": "sections"
+    },
+    "title": {
+      "type": "string"
+    },
+    "short_description": {
+      "type": "richtext"
+    },
+    "image_url": {
+      "type": "string"
+    },
+    "video_url": {
+      "type": "string"
+    },
+    "sub_title": {
+      "type": "richtext"
+    },
+    "long_description": {
+      "type": "richtext"
+    },
+    "extra_description": {
+      "type": "richtext"
+    },
+    "single_media_img": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "single_media_video": {
+      "allowedTypes": [
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "multiple_media_images": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "multiple_media_videos": {
+      "allowedTypes": [
+        "videos"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "single_media_file": {
+      "allowedTypes": [
+        "files"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "url": {
+      "type": "string"
+    },
+    "section_type": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::section-type.section-type",
+      "inversedBy": "sections"
+    }
+  }
+}
