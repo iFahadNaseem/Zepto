@@ -43,39 +43,44 @@
       "type": "richtext"
     },
     "single_media_img": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "single_media_video": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "videos"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "multiple_media_images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "multiple_media_videos": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "videos"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "single_media_file": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "files"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "url": {
       "type": "string"
@@ -85,6 +90,12 @@
       "relation": "manyToOne",
       "target": "api::section-type.section-type",
       "inversedBy": "sections"
+    },
+    "second_title": {
+      "type": "string"
+    },
+    "extra_title": {
+      "type": "string"
     }
   }
 }
