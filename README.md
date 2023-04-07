@@ -29,7 +29,7 @@ To get started with our project, follow these steps:
 
 ## Code of Conduct
 
-We are committed to providing a welcoming and inclusive environment for all contributors, regardless of their background or level of experience. By participating in this project, you agree to abide by our Code of Conduct, which can be found in the CODE_OF_CONDUCT.md file in the project repository. Any violations of the code of conduct should be reported to our team at contact@companyname.com.
+We are committed to providing a welcoming and inclusive environment for all contributors, regardless of their background or level of experience. By participating in this project, you agree to abide by our Code of Conduct, which can be found in the CODE_OF_CONDUCT.md file in the project repository. Any violations of the code of conduct should be reported to our team at fahadi.naseem1998@gmail.com.
 
 ## License
 
